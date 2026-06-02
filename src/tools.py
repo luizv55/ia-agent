@@ -1,6 +1,6 @@
 import sqlite3
 from langchain_core.tools import tool
-from database import get_connection
+from .database import get_connection
 
 @tool
 def buscar_no_banco(sql: str) -> str:  # retorna uma string dps da busca da busca de SQl

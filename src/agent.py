@@ -1,8 +1,8 @@
 from langgraph.graph import StateGraph, END         # monta o grafo e termina o fluxo
 from langgraph.prebuilt import ToolNode             # Executa as tools automaticamente
-from schema import State                            
-from nodes import node_llm
-from tools import buscar_no_banco
+from .schema import State
+from .nodes import node_llm
+from .tools import buscar_no_banco
 
 """
     Schema de decisão do banco
